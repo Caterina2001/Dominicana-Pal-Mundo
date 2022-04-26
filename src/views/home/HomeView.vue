@@ -5,7 +5,10 @@
     <p>Esta vista está disponible gracias al routing, es contenido dinámico </p>
   
   </div>
+  
 </template>
+
+
 
 <script lang="ts">
 import Vue from 'vue';
