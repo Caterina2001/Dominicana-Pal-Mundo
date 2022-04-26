@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeGirl-4/Base-Template-MEN.git"
+    "url": "git+https://github.com/Caterina2001/Dominicana-Pal-Mundo.git"
   },
   "author": "Carolyn Báez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeGirl-4/Base-Template-MEN/issues"
+    "url": "https://github.com/Caterina2001/Dominicana-Pal-Mundo.git/issues"
   },
-  "homepage": "https://github.com/CodeGirl-4/Base-Template-MEN#readme",
+  "homepage": "https://github.com/Caterina2001/Dominicana-Pal-Mundo.git#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/morgan": "^1.9.3",
