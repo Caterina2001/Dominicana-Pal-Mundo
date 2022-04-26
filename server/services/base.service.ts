@@ -23,7 +23,7 @@ export default class BaseService {
 
     async getOne(req: Request, res:Response){
         const {id} = req.params
-        const data = await this.model.findById(id).exec()
+        const data = await this.model.findById(id, {password: 0}).exec()
         return res.status(200).json(data)
     }
 
