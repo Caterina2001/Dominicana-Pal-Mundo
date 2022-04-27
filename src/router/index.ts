@@ -10,6 +10,17 @@ const routes: Array<RouteConfig> = [
     name: 'home',
     component: () => import('../views/home/HomeView.vue')
   },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/header/About.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/header/Contact.vue')
+  },
+
  
 ]
 

@@ -247,7 +247,7 @@
                       <a href="post-details.html"><h4>Paellero Valenciano</h4></a>
                       <ul class="post-info">
                       </ul>
-                      <p>You can support us by contributing a little via PayPal. Please contact <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">TemplateMo</a> via Live Chat or Email. If you have any question or feedback about this template, feel free to talk to us. Also, you may check other CSS templates such as <a rel="nofollow" href="https://templatemo.com/tag/multi-page" target="_parent">multi-page</a>, <a rel="nofollow" href="https://templatemo.com/tag/resume" target="_parent">resume</a>, <a rel="nofollow" href="https://templatemo.com/tag/video" target="_parent">video</a>, etc.</p>
+                      <p>La Vacama es una playa alejada de los grandes complejos turísticos y se ubica al norte de Punta Cana incluso es un poco mas allá que Uvero Alto. Llegando a la playa te encontrarás que estas en un lugar donde aun podemos decir que está descubriéndose, podemos encontrarnos ocasionalmente con otros visitantes y hay que disfrutar de esta posibilidad ya que la mano de los hoteleros y empresarios llegan rápido.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-6">
