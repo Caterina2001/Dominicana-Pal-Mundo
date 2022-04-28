@@ -20,10 +20,10 @@
                   <span class="sr-only">(current)</span>
               </li> 
               <li class="nav-item">
-                <router-link to="/about" class="nav-link">Sobre Nosotros</router-link>
+                <router-link to="/about" class="nav-link">Nosotros</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/dominican" class="nav-link">Cultura Dominicana</router-link>
+                <router-link to="/dominican" class="nav-link">Cultura</router-link>
 
               </li>
               <li class="nav-item">
@@ -31,6 +31,9 @@
               </li>
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link">Contacto</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/login" class="nav-link">Login</router-link>
               </li>
             </ul>
           </div>

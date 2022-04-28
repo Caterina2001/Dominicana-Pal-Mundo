@@ -25,6 +25,17 @@ const routes: Array<RouteConfig> = [
     name: 'dominican',
     component: () => import('../views/header/Dominican.vue')
   },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/loginregister/Login.vue')
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/loginregister/Register.vue')
+  },
+
 
  
 ]
