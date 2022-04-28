@@ -23,7 +23,8 @@
                 <router-link to="/about" class="nav-link">Sobre Nosotros</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Cultura Dominicana</a>
+                <router-link to="/dominican" class="nav-link">Cultura Dominicana</router-link>
+
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="post-details.html">Detalles</a>

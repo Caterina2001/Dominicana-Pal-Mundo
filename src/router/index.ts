@@ -20,6 +20,11 @@ const routes: Array<RouteConfig> = [
     name: 'contact',
     component: () => import('../views/header/Contact.vue')
   },
+  {
+    path: '/dominican',
+    name: 'dominican',
+    component: () => import('../views/header/Dominican.vue')
+  },
 
  
 ]
