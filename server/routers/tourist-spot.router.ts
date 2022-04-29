@@ -1,17 +1,17 @@
 import { Request, Response, Router } from 'express'
-import { UserService } from '../services/user.service'
+import  TouristSpotService from '../services/tourist-spot.service'
 import Authentication from '../utils/authentication.util'
 
 const router = Router()
-const service = new UserService()
+const service = new TouristSpotService()
 
 //Get
-router.get('', Authentication.validateToken, (req: Request, res: Response) => {
+router.get('', (req: Request, res: Response) => {
 
    service.getAll(req, res)
 })
 
-router.get('/:id', Authentication.validateToken, (req: Request, res: Response) => {
+router.get('/:id', (req: Request, res: Response) => {
 
    service.getOne(req, res)
 })
@@ -20,16 +20,6 @@ router.get('/:id', Authentication.validateToken, (req: Request, res: Response) =
 router.post('/', Authentication.validateToken, (req: Request, res: Response) => {
 
    service.addOne(req, res)
-})
-
-router.post('/signUp', (req: Request, res: Response) => {
-
-   service.signUp(req, res)
-})
-
-router.post('/signIn', (req: Request, res: Response) => {
-
-   service.signIn(req, res)
 })
 
 //Put

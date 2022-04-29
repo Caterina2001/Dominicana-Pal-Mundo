@@ -1,35 +1,25 @@
 import { Request, Response, Router } from 'express'
-import { UserService } from '../services/user.service'
+import  EventService from '../services/event.service'
 import Authentication from '../utils/authentication.util'
-
+import multer from '../config/multer.config'
 const router = Router()
-const service = new UserService()
+const service = new EventService()
 
 //Get
-router.get('', Authentication.validateToken, (req: Request, res: Response) => {
+router.get('', (req: Request, res: Response) => {
 
    service.getAll(req, res)
 })
 
-router.get('/:id', Authentication.validateToken, (req: Request, res: Response) => {
+router.get('/:id', (req: Request, res: Response) => {
 
    service.getOne(req, res)
 })
 
 //Post
 router.post('/', Authentication.validateToken, (req: Request, res: Response) => {
-
-   service.addOne(req, res)
-})
-
-router.post('/signUp', (req: Request, res: Response) => {
-
-   service.signUp(req, res)
-})
-
-router.post('/signIn', (req: Request, res: Response) => {
-
-   service.signIn(req, res)
+   multer.single('photo')
+   service. addEvent(req, res)
 })
 
 //Put

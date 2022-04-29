@@ -1,9 +1,9 @@
 import { Request, Response, Router } from 'express'
-import { UserService } from '../services/user.service'
+import  CategoryService from '../services/category.service'
 import Authentication from '../utils/authentication.util'
 
 const router = Router()
-const service = new UserService()
+const service = new CategoryService()
 
 //Get
 router.get('', Authentication.validateToken, (req: Request, res: Response) => {
@@ -20,16 +20,6 @@ router.get('/:id', Authentication.validateToken, (req: Request, res: Response) =
 router.post('/', Authentication.validateToken, (req: Request, res: Response) => {
 
    service.addOne(req, res)
-})
-
-router.post('/signUp', (req: Request, res: Response) => {
-
-   service.signUp(req, res)
-})
-
-router.post('/signIn', (req: Request, res: Response) => {
-
-   service.signIn(req, res)
 })
 
 //Put
