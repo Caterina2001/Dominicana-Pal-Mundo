@@ -3,8 +3,9 @@
     <div class="hoc container clear">
       <div class="sectiontitle">
         <p class="heading underline font-x2">
-          Hoteles cercanos a Caño del Rio Blanco
+          Hoteles cercanos 
         </p>
+        <br>
         <router-link to="/addhotel" class="tm-btn-white-bordered add-hotel"
           >Agregar hotel</router-link
         >
@@ -16,7 +17,7 @@
               ><img src="assets/images/hotel1.jpg" alt=""
             /></a>
             <figcaption>
-              <strong>Hotel San Juan</strong> <em>A 5 Km de distancia</em>
+              <strong>Hotel View</strong> <em>A 5 Km de distancia</em>
             </figcaption>
           </figure>
         </li>
@@ -37,7 +38,7 @@
               ><img src="assets/images/hotel3.jpg" alt=""
             /></a>
             <figcaption>
-              <strong>Hotel Maguana</strong> <em>A 10 Km de distancia</em>
+              <strong>Hotel Primavera</strong> <em>A 10 Km de distancia</em>
             </figcaption>
           </figure>
         </li>
@@ -74,7 +75,7 @@
 </template>
 <style>
 .heading {
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .tm-section-title {
