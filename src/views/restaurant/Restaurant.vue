@@ -2,7 +2,7 @@
   <div class="wrapper row2">
     <div class="hoc container clear">
       <div class="sectiontitle">
-        <p class="heading underline font-x2">Restaurantes cercanos a</p>
+        <p class="heading underline font-x2">Restaurantes en la República Dominicana</p>
       </div>
       <ul class="nospace group team">
         <li
@@ -58,6 +58,13 @@
 <style>
 .heading {
   font-size: 26px;
+}
+
+.team figure em {
+    display: block;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 26px;
 }
 </style>
 

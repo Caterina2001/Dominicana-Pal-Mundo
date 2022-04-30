@@ -12,45 +12,49 @@
             <div class="card register">
               <h1 style="font-size:28px; color: #f48840">Crea tu propio itinerario</h1>
               <form class="form-group">
+                <label for="name">Nombre</label>
                 <input
                   class="form-control"
                   placeholder="Nombre Itinerario"
+                  v-model="itinerary.name"
                   required
                 />
+
+                 <label for="name">Precio por día</label>
                 <input type="number"
                   class="form-control"
+                    v-model="itinerary.pricePerDay"
                   placeholder="Precio por dia dispuesto a pagar"
                   required
                 />
 
+ <label for="name">Cantidad de días</label>
+                 <input type="number"
+                  class="form-control"
+                    v-model="itinerary.totalDays"
+                  placeholder="Cantidad de días"
+                  required
+                />
 
+                
                 <div class="form-group">
-                  <select class="form-control"  >                      
-                    <option hidden>Dias deseados</option>
-                    <option value="admin">1</option>
-                    <option value="Admin">2</option>
-                    <option value="Admin">3</option>
-                    <option value="Admin">4</option>
-                    <option value="Admin">5</option>
-                    <option value="Admin">6</option>
-                    <option value="Admin">7</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <select class="form-control"  >                      
+                  <label for="">Categoría</label>
+                  <select class="form-control"  v-model="categoryId">                      
                     <option hidden>Lugares interesados</option>
-                    <option value="admin">Zona norte</option>
+                    <option v-for="(categories, index) in categories" :key="index" :value="categories._id">
+                      {{categories.name}}
+                    </option>
+                    <!-- <option value="admin">Zona norte</option>
                     <option value="Admin">Zona este</option>
                     <option value="Admin">Playa</option>
                     <option value="Admin">Montaña</option>
-                    <option value="Admin">Natura</option>
+                    <option value="Admin">Natura</option> -->
                   </select>
                 </div>
               </form>
             </div>
              <div class="form-group tm-form-element tm-form-element-2">
-                <button type="submit" class="btn btn-primary tm-btn-search" style="background: #f48840; border: #f48840">Crear Itinerario</button>
+                <button type="button" @click="add()" class="btn btn-primary tm-btn-search" style="background: #f48840; border: #f48840">Crear Itinerario</button>
             </div>
           </div>
         </div>
@@ -128,55 +132,36 @@ p {
 
 <script>
 
-// aqui lo deje igualito, habria que cambiar este script
-// aqui lo deje igualito, habria que cambiar este script
-// aqui lo deje igualito, habria que cambiar este script
-// aqui lo deje igualito, habria que cambiar este script
-
-
 import Vue from "vue";
-import UserService from "../../core/services/user.service";
-import { SignUpModel } from "../../core/models/user.model";
+import ItineraryService from "../../core/services/itinerary.service";
+import { ItineraryModel } from "../../core/models/itinerary.model";
+import CategoryService from '../../core/services/category.service'
 import store from "@/store/index";
 
 export default Vue.extend({
   data() {
     return {
-      user: {
-        model: new SignUpModel(),
-        confirmPassword: "",
-      },
-      secretCode: "",
-      service: new UserService(),
+     service: new ItineraryService,
+     itinerary: new ItineraryModel,
+     categoryService: new CategoryService,
+     categories: [],
+     categoryId: ""
     };
   },
 
-  methods: {
-    async signUp() {
-      if (this.user.confirmPassword == this.user.model.password) {
-        if (
-          (this.user.model.role == "Admin" && this.secretCode == "TDS") ||
-          this.user.model.role == "Registered"
-        ) {
-          const response = await this.service.signUp(this.user.model);
-          console.log(response);
-          if (localStorage.getItem("currentUser")) {
-            localStorage.removeItem("currentUser");
-          }
+  methods:{
+    async add(){
+      const response = await this.service.postItinerary(this.itinerary, this.categoryId)
+      console.log(response)
 
-          localStorage.setItem("currentUser", JSON.stringify(response.data));
-          store.state.user = response.data;
-
-          if (localStorage.getItem("token")) {
-            localStorage.removeItem("token");
-          }
-
-          localStorage.setItem("token", JSON.stringify(response.token));
-          store.state.token = response.token;
-        }
-      }
-    },
+    }
   },
+
+ async beforeMount(){
+   const response = await this.categoryService.get()
+   this.categories = response
+  }
+  
 });
 </script>
 
