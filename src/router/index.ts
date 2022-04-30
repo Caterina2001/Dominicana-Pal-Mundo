@@ -76,6 +76,11 @@ const routes: Array<RouteConfig> = [
     name: 'FormHotel',
     component: () => import('../views/hotels/Form.vue')
   },
+  {
+    path: '/formItineraries',
+    name: 'formItineraries',
+    component: () => import('../views/reservationsList/Itinerario.vue')
+  },
  
 ]
 
