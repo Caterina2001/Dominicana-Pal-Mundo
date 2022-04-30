@@ -199,15 +199,12 @@ export default Vue.extend({
       if(response.status != 200){
         this.success = false
         this.error = true
-        // this.delay(5)
-        //  this.error = false
       }
       else{
         console.log("first")
         this.success = true
         this.error = false
-        // this.delay(5)
-        //  this.success = false
+
       }
     },
   },

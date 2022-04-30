@@ -40,6 +40,16 @@ const routes: Array<RouteConfig> = [
     name: 'profile',
     component: () => import('../views/user/Profile.vue')
   },
+  {
+    path: '/reservations',
+    name: 'reservations',
+    component: () => import('../views/reservationsList/reservationList.vue')
+  },
+  {
+    path: '/itineraries',
+    name: 'profile',
+    component: () => import('../views/user/Profile.vue')
+  },
 
 
  

@@ -82,6 +82,20 @@
                     
                         </router-link>
                          </b-dropdown-item>
+                          <b-dropdown-item value="products" aria-role="menuitem">
+                        <router-link to="itineraries">
+                           <b-icon icon="cart"></b-icon>
+                        Mis itinerarios
+                    
+                        </router-link>
+                         </b-dropdown-item>
+                          <b-dropdown-item value="products" aria-role="menuitem">
+                        <router-link to="reservations">
+                           <b-icon icon="cart"></b-icon>
+                        Mis reservaciones
+                    
+                        </router-link>
+                         </b-dropdown-item>
                 
                       <hr class="dropdown-divider" aria-role="menuitem" />
                       <b-dropdown-item value="logout" aria-role="menuitem" @click="logout()">
