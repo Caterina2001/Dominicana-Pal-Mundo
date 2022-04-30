@@ -3,12 +3,19 @@
     <div class="hoc container clear">
       <div class="sectiontitle">
         <p class="heading underline font-x2">
+<<<<<<< HEAD
           Hoteles en la República Dominicana
         </p>
         <router-link
           to="/addhotel"
           class="tm-btn-white-bordered add-hotel"
           v-if="user.role == 'Admin'"
+=======
+          Hoteles cercanos 
+        </p>
+        <br>
+        <router-link to="/addhotel" class="tm-btn-white-bordered add-hotel"
+>>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
           >Agregar hotel</router-link
         >
       </div>
@@ -22,6 +29,7 @@
           <figure>
             <a class="" href="#"><img :src="images[index]" alt="" /></a>
             <figcaption>
+<<<<<<< HEAD
               <strong>{{ hotel.name }}</strong>
               <em>{{ hotel.location }}</em>
               <em>RD${{ hotel.pricePerDay }}P/D</em>
@@ -34,6 +42,9 @@
               <em v-if="user.role == 'Admin'"
                 >{{ hotel.occupiedRooms }} Habitaciones Ocupadas</em
               >
+=======
+              <strong>Hotel View</strong> <em>A 5 Km de distancia</em>
+>>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
             </figcaption>
           </figure>
         </li>
@@ -54,7 +65,7 @@
               ><img src="assets/images/hotel3.jpg" alt=""
             /></a>
             <figcaption>
-              <strong>Hotel Maguana</strong> <em>A 10 Km de distancia</em>
+              <strong>Hotel Primavera</strong> <em>A 10 Km de distancia</em>
             </figcaption>
           </figure>
         </li> -->
@@ -124,7 +135,7 @@ export default Vue.extend({
 </script>
 <style>
 .heading {
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .tm-section-title {

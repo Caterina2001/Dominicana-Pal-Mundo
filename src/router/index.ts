@@ -77,11 +77,18 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/reservationsList/Itinerario.vue')
   },
   {
+<<<<<<< HEAD
     path: '/itineraries',
     name: 'Itineraries',
     component: () => import('../views/itinerario/itinerario.vue')
   },
  
+=======
+    path: '/formDestination',
+    name: 'formDestination',
+    component: () => import('../views/touristDestination/formDestination.vue')
+  },
+>>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
 ]
 
 const router = new VueRouter({

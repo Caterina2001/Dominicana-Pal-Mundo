@@ -91,6 +91,66 @@
               </div>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+      </div>  
+      <div class=" header-text">
+        <div class="dive">
+          <div class="owl-banner owl-carousel owl-loaded owl-drag">      
+          <div class=""><div class="owl-item cloned" style="width: 412px; margin-right: 10px;"><div class="item">
+              <img src="assets/images/img1.png" alt="">
+              <div class="item-content">
+                <div class="main-content">
+                  <div class="meta-category">
+                    <span><h3>Espaillat</h3></span>
+                  </div>
+                  <a href="post-details-hongo.html"><h4>Hongo Magico</h4></a>
+                  <ul class="post-info">
+                    <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
+                  </ul>
+                </div>             
+              </div>
+            
+            </div></div><div class="owl-item cloned" style="width: 412px; margin-right: 10px;"><div class="item">
+              <img src="assets/images/img5.png" alt="">
+              <div class="item-content">
+                <div class="main-content">
+                  <div class="meta-category">
+                    <span><h3>Samana</h3></span>
+                  </div>
+                  <a href="post-details-fronton.html"><h4>Playa Frontón</h4></a>
+                  <ul class="post-info">
+                    <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div></div><div class="owl-item active" style="width: 412px; margin-right: 10px;"><div class="item">
+              <img src="assets/images/img4.png" alt="">
+              <div class="item-content">
+                <div class="main-content">
+                  <div class="meta-category">
+                    <span><h3>San Juan</h3></span>
+                  </div>
+                  <a href="post-details-sanjuan.html"><h4>Cañón del rio blanco</h4></a>
+                  <ul class="post-info">
+                    <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
+                  </ul>
+                </div>
+              </div>
+
+            
+              
+
+
+            </div></div></div></div></div>
+>>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
         </div>
       </div>
     </div>

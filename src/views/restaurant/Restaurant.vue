@@ -38,17 +38,17 @@
         </li>
         <!-- <li class="one_quarter">
                     <figure><a class="" href="#"><img src="assets/images/rest2.jpg" alt=""></a>
-                        <figcaption><strong>Ecoturismo Rio Blanco</strong> <em>A 0 Km de distancia</em></figcaption>
+                        <figcaption><strong>Restaurante El Rio</strong> <em>A 0 Km de distancia</em></figcaption>
                     </figure>
                 </li>
                 <li class="one_quarter">
                     <figure><a class="" href="#"><img src="assets/images/rest3.jpg" alt=""></a>
-                        <figcaption><strong>Hotel Maguana</strong> <em>A 10 Km de distancia</em></figcaption>
+                        <figcaption><strong>Pizzeria Bruno</strong> <em>A 10 Km de distancia</em></figcaption>
                     </figure>
                 </li>
                 <li class="one_quarter">
                     <figure><a class="" href="#"><img src="assets/images/rest4.jpg" alt=""></a>
-                        <figcaption><strong>Hotel El Libano</strong> <em>A 2 Km de distancia</em></figcaption>
+                        <figcaption><strong>Restaurante La Londra</strong> <em>A 2 Km de distancia</em></figcaption>
                     </figure>
                 </li> -->
       </ul>
@@ -56,8 +56,8 @@
   </div>
 </template>
 <style>
-.heading {
-  font-size: 26px;
+.heading{
+    font-size: 32px;
 }
 
 .team figure em {
