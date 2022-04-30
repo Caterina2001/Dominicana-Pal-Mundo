@@ -52,7 +52,7 @@ p {
 
 .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 35px; }
 .tm-top-bar-bg { height: 119px; }
-.tm-section { min-height: 515px; }
+.tm-section { min-height: 515px; padding-top: 150px; }
 
 .tm-section-pad {
 	padding-top: 80px;
@@ -60,8 +60,8 @@ p {
 }
 
 #tm-section-1 {	
-	background-image: url('../img/bg-img-1.jpg');	
-	height: 515px;
+	background-image: url('../img/reserva.jpg');	
+	height: 615px;
 }
 
 #tm-section-5 { background-image: url('../img/back.jpg'); }
@@ -187,6 +187,7 @@ select.tm-select::-ms-expand { display: none; }
 .tm-section-2 {
 	background: #f48840;
 	padding-top: 50px;
+	padding-bottom: 50px;
 	position: relative;
 }
 

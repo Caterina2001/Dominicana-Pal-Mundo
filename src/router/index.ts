@@ -36,6 +36,25 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/loginregister/Register.vue')
   },
   {
+    path: '/reservas',
+    name: 'reservas',
+    component: () => import('../views/header/Reservas.vue')
+  },
+  {
+    path: '/hotel',
+    name: 'hotel',
+    component: () => import('../views/hotels/Hotel.vue')
+  },
+  {
+    path: '/experience',
+    name: 'experience',
+    component: () => import('../views/experience/Experience.vue')
+  },
+  {
+    path: '/restaurant',
+    name: 'restaurant',
+    component: () => import('../views/restaurant/Restaurant.vue')
+  },
     path: '/profile',
     name: 'profile',
     component: () => import('../views/user/Profile.vue')

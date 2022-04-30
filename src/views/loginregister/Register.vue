@@ -2,7 +2,7 @@
   <div id="app">
     <div class="login-page">
       <transition name="fade">
-        <div class="wallpaper-register"></div>
+        <div class="wallpaper-login"></div>
       </transition>
       <div class="wallpaper-register"></div>
 
@@ -99,6 +99,15 @@ p {
   display: flex;
   height: 100vh;
 
+  .wallpaper-login {
+    background: url(https://wallpapercave.com/wp/wp2183743.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.5s;
@@ -108,21 +117,10 @@ p {
     opacity: 0;
   }
 
-  .wallpaper-register {
-    background: url(https://free4kwallpapers.com/uploads/originals/2020/05/16/beach-ocean-wallpaper.jpg)
-      no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
-
   h1 {
     margin-bottom: 1.5rem;
   }
 }
-
 .error {
   animation-name: errorShake;
   animation-duration: 0.3s;
