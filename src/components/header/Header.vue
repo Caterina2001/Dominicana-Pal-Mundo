@@ -41,7 +41,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="post-details.html">Detalles</a>
+                <router-link to="/reservas" class="nav-link">Reservas</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link"

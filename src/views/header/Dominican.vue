@@ -61,31 +61,20 @@
                     </div>   
                 </div>
             </div>
-            
+        <div class="tm-section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5 class="tm-section-title">El final del viaje no es el destino, sino los contratiempos y recuerdos que se crean en el camino</h5>
+                        <!-- <p class="tm-color-white tm-section-subtitle">SDominicana Pal Mundo</p> -->
+                    </div>                
+                </div>
+            </div>        
+        </div>
     
 
 
 
-            <div class="tm-bg-video">
-                <div class="overlay">
-                    <i class="fa fa-5x fa-play-circle tm-btn-play"></i>
-                    <i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
-                </div>
-
-
-                <video controls="" loop="" class="tmVideo">
-<!--                     <video ref="videoRef" src="/public/reservas/videos/baile.mp4" id="video-container" width="100%" controls></video>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LRIpkHuCagw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <source src="/public/reservas/videos/baile.mp4" type="video/mp4"> 
-                    <video-embed src="/public/reservas/videos/baile.mp4" type="video/mp4"></video-embed>-->
-               
-                    <video-embed v-bind:src="require('/public/reservas/videos/baile.mp4')" alt="video"></video-embed>
-
-                    <source src="/public/reservas/videos/baile.mp4" type="video/mp4"> 
-                    <source src="videos/video.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
 
                 <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">                                                        
                     <div class="container ie-h-align-center-fix">
@@ -98,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-            </div>           
             
 
         

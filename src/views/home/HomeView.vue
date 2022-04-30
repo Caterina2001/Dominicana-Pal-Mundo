@@ -22,9 +22,9 @@
                   </div>
                   <a href="post-details-hongo.html"><h4>Hongo Magico</h4></a>
                   <ul class="post-info">
-                    <li><a href="#">Hoteles</a></li>
-                    <li><a href="#">Experiencias</a></li>
-                    <li><a href="#">Restaurantes</a></li>
+                    <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
                   </ul>
                 </div>             
               </div>
