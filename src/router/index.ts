@@ -71,7 +71,11 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/user/Profile.vue')
   },
 
-
+  {
+    path: '/addhotel',
+    name: 'FormHotel',
+    component: () => import('../views/hotels/Form.vue')
+  },
  
 ]
 
