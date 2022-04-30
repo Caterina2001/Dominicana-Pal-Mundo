@@ -3,19 +3,12 @@
     <div class="hoc container clear">
       <div class="sectiontitle">
         <p class="heading underline font-x2">
-<<<<<<< HEAD
           Hoteles en la República Dominicana
         </p>
         <router-link
           to="/addhotel"
           class="tm-btn-white-bordered add-hotel"
           v-if="user.role == 'Admin'"
-=======
-          Hoteles cercanos 
-        </p>
-        <br>
-        <router-link to="/addhotel" class="tm-btn-white-bordered add-hotel"
->>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
           >Agregar hotel</router-link
         >
       </div>
@@ -29,7 +22,6 @@
           <figure>
             <a class="" href="#"><img :src="images[index]" alt="" /></a>
             <figcaption>
-<<<<<<< HEAD
               <strong>{{ hotel.name }}</strong>
               <em>{{ hotel.location }}</em>
               <em>RD${{ hotel.pricePerDay }}P/D</em>
@@ -42,9 +34,6 @@
               <em v-if="user.role == 'Admin'"
                 >{{ hotel.occupiedRooms }} Habitaciones Ocupadas</em
               >
-=======
-              <strong>Hotel View</strong> <em>A 5 Km de distancia</em>
->>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
             </figcaption>
           </figure>
         </li>
@@ -110,6 +99,10 @@ export default Vue.extend({
     return {
       hotels: [] as any,
       images: [
+        "http://localhost:8080/assets/images/hotel1.jpg",
+        "http://localhost:8080/assets/images/hotel2.jpg",
+        "http://localhost:8080/assets/images/hotel3.jpg",
+        "http://localhost:8080/assets/images/hotel4.jpg",
         "http://localhost:8080/assets/images/hotel1.jpg",
         "http://localhost:8080/assets/images/hotel2.jpg",
         "http://localhost:8080/assets/images/hotel3.jpg",

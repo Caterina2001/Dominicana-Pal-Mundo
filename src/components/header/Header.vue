@@ -165,4 +165,8 @@ export default Vue.extend({
 .user-icon {
   font-size: 43px;
 }
+
+a.dropdown-item.is-active, .dropdown .dropdown-menu .has-link a.is-active, button.dropdown-item.is-active{
+  background-color: white !important;
+}
 </style>
