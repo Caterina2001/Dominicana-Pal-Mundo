@@ -150,7 +150,7 @@ p {
 import Vue from "vue";
 import UserService from "../../core/services/user.service";
 import { SignUpModel } from "../../core/models/user.model";
-import store from '@/store/index'
+import store from "@/store/index";
 
 export default Vue.extend({
   data() {
@@ -173,13 +173,19 @@ export default Vue.extend({
         ) {
           const response = await this.service.signUp(this.user.model);
           console.log(response);
-            if(localStorage.getItem("currentUser"))
-      {
-         localStorage.removeItem("currentUser")
-      }
+          if (localStorage.getItem("currentUser")) {
+            localStorage.removeItem("currentUser");
+          }
 
-      localStorage.setItem("currentUser", JSON.stringify(response.data))
-      store.state.user = response.data
+          localStorage.setItem("currentUser", JSON.stringify(response.data));
+          store.state.user = response.data;
+
+          if (localStorage.getItem("token")) {
+            localStorage.removeItem("token");
+          }
+
+          localStorage.setItem("token", JSON.stringify(response.token));
+          store.state.token = response.token;
         }
       }
     },

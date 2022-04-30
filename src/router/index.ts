@@ -55,6 +55,12 @@ const routes: Array<RouteConfig> = [
     name: 'restaurant',
     component: () => import('../views/restaurant/Restaurant.vue')
   },
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/user/Profile.vue')
+  },
+
+
  
 ]
 
