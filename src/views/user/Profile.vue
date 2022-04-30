@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h2 class="tm-section-title">Mi Perfil</h2>
+            <h2 class="tm-section-title" style="text-transform:capitalize !important">Mi Perfil</h2>
           </div>
         </div>
       </div>
@@ -38,8 +38,7 @@
       </template>
       <div class="body">
         <div class="profile-icon">
-          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-          <p class="tm-section-subtitle">{{ user.role }}</p>
+<i class="fa fa-user" aria-hidden="true"></i>          <p class="tm-section-subtitle">{{ user.role }}</p>
         </div>
         <div class="card-content">
           <div class="content">
@@ -289,5 +288,13 @@ article.notification.is-danger {
 
 .show-success, .show-danger {
   display: block !important;
+}
+
+h3{
+  text-transform:capitalize !important
+}
+
+.tm-section{
+  padding: 0 !important;
 }
 </style>

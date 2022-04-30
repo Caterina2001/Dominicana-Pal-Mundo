@@ -62,11 +62,12 @@
                       aria-role="menu"
                     >
                       <template #trigger>
-                        <a class="navbar-item" role="button">
-                          <i
+                        <a class="navbar-item" role="button" style="margin-top: -6px; margin-right: -53px;">
+                          <!-- <i
                             class="fa fa-user-circle-o user-icon"
-                            aria-hidden="true"
-                          ></i>
+                         
+                          ></i> -->
+                         <b-button type="is-dark">Mi sesión</b-button>
                           <b-icon icon="menu-down"></b-icon>
                         </a>
                       </template>
@@ -134,6 +135,7 @@ export default Vue.extend({
       store.state.user = this.user;
     },
   },
+  
 
   computed: {
     user: {

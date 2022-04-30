@@ -1,12 +1,6 @@
 <template>
   <body>
-    <div id="">
-      <div class="jumper">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+    
     <div class="header-text">
       <div class="dive">
         <div class="owl-banner owl-carousel owl-loaded owl-drag">
@@ -91,10 +85,8 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-=======
       </div>  
-      <div class=" header-text">
+      <!-- <div class=" header-text">
         <div class="dive">
           <div class="owl-banner owl-carousel owl-loaded owl-drag">      
           <div class=""><div class="owl-item cloned" style="width: 412px; margin-right: 10px;"><div class="item">
@@ -150,8 +142,7 @@
 
 
             </div></div></div></div></div>
->>>>>>> bfc4bed7979ed13b185b234c416fa66987a2b3b9
-        </div>
+        </div> -->
       </div>
     </div>
 
