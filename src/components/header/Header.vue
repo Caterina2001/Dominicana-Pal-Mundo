@@ -76,9 +76,12 @@
                           </strong>
                       </b-dropdown-item>
                       <b-dropdown-item value="products" aria-role="menuitem">
-                        <b-icon icon="cart"></b-icon>
+                        <router-link to="profile">
+                           <b-icon icon="cart"></b-icon>
                         Ver mi perfil
-                      </b-dropdown-item>
+                    
+                        </router-link>
+                         </b-dropdown-item>
                 
                       <hr class="dropdown-divider" aria-role="menuitem" />
                       <b-dropdown-item value="logout" aria-role="menuitem" @click="logout()">

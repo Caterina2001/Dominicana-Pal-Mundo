@@ -130,6 +130,14 @@ export default Vue.extend({
   
       localStorage.setItem("currentUser", JSON.stringify(response.user))
       store.state.user = response.user
+
+            if(localStorage.getItem("token"))
+      {
+         localStorage.removeItem("token")
+      }
+  
+      localStorage.setItem("token", JSON.stringify(response.token))
+      store.state.token = response.token
     },
   },
 });

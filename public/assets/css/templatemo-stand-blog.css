@@ -782,7 +782,7 @@ ul.page-numbers li a:hover {
 
 /* Footer */
 
-footer {
+.footer-page{
 	margin-top: 100px;
 	text-align: center;
 	background-color: #20232e; 
