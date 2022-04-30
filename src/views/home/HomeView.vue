@@ -1,16 +1,92 @@
 <template>
-
   <body>
-
-      
-      <div id="">
-          <div class="jumper">
-              <div></div>
-              <div></div>
-              <div></div>
+    
+    <div class="header-text">
+      <div class="dive">
+        <div class="owl-banner owl-carousel owl-loaded owl-drag">
+          <div class="">
+            <div
+              class="owl-item cloned"
+              style="width: 412px; margin-right: 10px"
+            >
+              <div class="item">
+                <img src="assets/images/img1.png" alt="" />
+                <div class="item-content">
+                  <div class="main-content">
+                    <div class="meta-category">
+                      <span><h3>Espaillat</h3></span>
+                    </div>
+                    <a href="post-details-hongo.html"><h4>Hongo Magico</h4></a>
+                    <ul class="post-info">
+                      <li><router-link to="/hotel">Hoteles</router-link></li>
+                      <li>
+                        <router-link to="/experience">Experiencias</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/restaurant">Restaurantes</router-link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 412px; margin-right: 10px"
+            >
+              <div class="item">
+                <img src="assets/images/img5.png" alt="" />
+                <div class="item-content">
+                  <div class="main-content">
+                    <div class="meta-category">
+                      <span><h3>Samana</h3></span>
+                    </div>
+                    <a href="post-details-fronton.html"
+                      ><h4>Playa Frontón</h4></a
+                    >
+                    <ul class="post-info">
+                      <li><router-link to="/hotel">Hoteles</router-link></li>
+                      <li>
+                        <router-link to="/experience">Experiencias</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/restaurant">Restaurantes</router-link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 412px; margin-right: 10px"
+            >
+              <div class="item">
+                <img src="assets/images/img4.png" alt="" />
+                <div class="item-content">
+                  <div class="main-content">
+                    <div class="meta-category">
+                      <span><h3>San Juan</h3></span>
+                    </div>
+                    <a href="post-details-sanjuan.html"
+                      ><h4>Cañón del rio blanco</h4></a
+                    >
+                    <ul class="post-info">
+                      <li><router-link to="/hotel">Hoteles</router-link></li>
+                      <li>
+                        <router-link to="/experience">Experiencias</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/restaurant">Restaurantes</router-link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>  
-      <div class=" header-text">
+      <!-- <div class=" header-text">
         <div class="dive">
           <div class="owl-banner owl-carousel owl-loaded owl-drag">      
           <div class=""><div class="owl-item cloned" style="width: 412px; margin-right: 10px;"><div class="item">
@@ -66,9 +142,11 @@
 
 
             </div></div></div></div></div>
-        </div>
+        </div> -->
+      </div>
+    </div>
 
-<!-- 
+    <!-- 
     <div class="main-banner header-text">
       <div class="container-fluid">
         <div class="owl-banner owl-carousel owl-loaded owl-drag">
@@ -176,7 +254,7 @@
     </div>
    -->
 
-      <section class="call-to-action">
+    <section class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -188,7 +266,12 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="main-button">
-                    <a rel="nofollow" href="https://templatemo.com/tm-551-stand-blog" target="_parent">Descarga aqui!</a>
+                    <a
+                      rel="nofollow"
+                      href="https://templatemo.com/tm-551-stand-blog"
+                      target="_parent"
+                      >Descarga aqui!</a
+                    >
                   </div>
                 </div>
               </div>
@@ -197,7 +280,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="blog-posts">
       <div class="container">
@@ -208,14 +290,23 @@
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/padrenuestro.png" alt="">
+                      <img src="assets/images/padrenuestro.png" alt="" />
                     </div>
                     <div class="down-content">
                       <span>Bayahibe</span>
-                      <a href="post-details.html"><h4>Cueva Padre Nuestro</h4></a>
-                      <ul class="post-info">
-                      </ul>
-                      <p>Recorre el sendero ecológico y arqueológico Padre Nuestro en el parque nacional del Este, en Bayahibe, y admira los espectaculares lugares por los que te llevará. El bosque tropical húmedo, que te acompañará todo el camino, te mostrará numerosas especies endémicas de aves, reptiles y mariposas que conviven en un paisaje compuesto por piedra caliza.</p>
+                      <a href="post-details.html"
+                        ><h4>Cueva Padre Nuestro</h4></a
+                      >
+                      <ul class="post-info"></ul>
+                      <p>
+                        Recorre el sendero ecológico y arqueológico Padre
+                        Nuestro en el parque nacional del Este, en Bayahibe, y
+                        admira los espectaculares lugares por los que te
+                        llevará. El bosque tropical húmedo, que te acompañará
+                        todo el camino, te mostrará numerosas especies endémicas
+                        de aves, reptiles y mariposas que conviven en un paisaje
+                        compuesto por piedra caliza.
+                      </p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-6">
@@ -235,19 +326,29 @@
                         </div>
                       </div>
                     </div>
-                  </div>               
-                </div> 
+                  </div>
+                </div>
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/paellero.png" alt="">
+                      <img src="assets/images/paellero.png" alt="" />
                     </div>
                     <div class="down-content">
                       <span>La Vacama</span>
-                      <a href="post-details.html"><h4>Paellero Valenciano</h4></a>
-                      <ul class="post-info">
-                      </ul>
-                      <p>La Vacama es una playa alejada de los grandes complejos turísticos y se ubica al norte de Punta Cana incluso es un poco mas allá que Uvero Alto. Llegando a la playa te encontrarás que estas en un lugar donde aun podemos decir que está descubriéndose, podemos encontrarnos ocasionalmente con otros visitantes y hay que disfrutar de esta posibilidad ya que la mano de los hoteleros y empresarios llegan rápido.</p>
+                      <a href="post-details.html"
+                        ><h4>Paellero Valenciano</h4></a
+                      >
+                      <ul class="post-info"></ul>
+                      <p>
+                        La Vacama es una playa alejada de los grandes complejos
+                        turísticos y se ubica al norte de Punta Cana incluso es
+                        un poco mas allá que Uvero Alto. Llegando a la playa te
+                        encontrarás que estas en un lugar donde aun podemos
+                        decir que está descubriéndose, podemos encontrarnos
+                        ocasionalmente con otros visitantes y hay que disfrutar
+                        de esta posibilidad ya que la mano de los hoteleros y
+                        empresarios llegan rápido.
+                      </p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-6">
@@ -272,15 +373,22 @@
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/cañon.png" alt="">
+                      <img src="assets/images/cañon.png" alt="" />
                     </div>
                     <div class="down-content">
                       <span>Jamao</span>
-                      <a href="post-details.html"><h4>Cañón de Arroyo Frío</h4></a>
-                      <ul class="post-info">
-                        
-                      </ul>
-                      <p>El Cañón de Arroyo Frío se encuentra en Jamao al Norte, en la Provincia Espaillat. Es un destino único en el país y  es una de las rutas establecidas de barranquismo más largas en la República Dominicana. El recorrido de 3.5 km se hace a través de 18 cascadas y más de 60 charcos. Es un sueño para aventureros y un lugar espectacular.
+                      <a href="post-details.html"
+                        ><h4>Cañón de Arroyo Frío</h4></a
+                      >
+                      <ul class="post-info"></ul>
+                      <p>
+                        El Cañón de Arroyo Frío se encuentra en Jamao al Norte,
+                        en la Provincia Espaillat. Es un destino único en el
+                        país y es una de las rutas establecidas de barranquismo
+                        más largas en la República Dominicana. El recorrido de
+                        3.5 km se hace a través de 18 cascadas y más de 60
+                        charcos. Es un sueño para aventureros y un lugar
+                        espectacular.
                       </p>
                       <div class="post-options">
                         <div class="row">
@@ -305,7 +413,9 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="main-button">
-                    <a href="./reservas/index.html">Crea un Tour Personalizado</a>
+                    <a href="./reservas/index.html"
+                      >Crea un Tour Personalizado</a
+                    >
                   </div>
                 </div>
               </div>
@@ -317,22 +427,47 @@
                 <div class="col-lg-12">
                   <div class="sidebar-item search">
                     <form id="search_form" name="gs" method="GET" action="#">
-                      <input type="text" name="q" class="searchText" placeholder="Buscar..." autocomplete="on">
+                      <input
+                        type="text"
+                        name="q"
+                        class="searchText"
+                        placeholder="Buscar..."
+                        autocomplete="on"
+                      />
                     </form>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="sidebar-item categories">
                     <div class="sidebar-heading">
-                      <h2>Categorias</h2>
+                      <h2>Categorías</h2>
                     </div>
                     <div class="content">
                       <ul>
-                        <li><a href="#">- Nature </a></li>
-                        <li><a href="#">- Awesome </a></li>
-                        <li><a href="#">- Creative </a></li>
-                        <li><a href="#">- Responsive </a></li>
+                        <li
+                          v-for="(category, index) in categories"
+                          :key="index"
+                        >
+                          <a href="#"> {{ category.name }} </a>
+                        </li>
                       </ul>
+                      <div class="create">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nueva categoría"
+                          required
+                          v-model="category.name"
+                        />
+                        <b-button
+                          @click="addCategory()"
+                          type="button"
+                          class="btn is-light"
+                          style="text-transform: capitalize"
+                        >
+                          Crear categoría
+                        </b-button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -359,36 +494,53 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
-
-
-
   </body>
-  
-  
 </template>
 
-
-
-
 <script lang="ts">
-
-import Vue from 'vue';
+import Vue from "vue";
+import CategoryService from "../../core/services/category.service";
+import { CategoryModel } from "../../core/models/category.model";
 
 export default Vue.extend({
- 
+  data() {
+    return {
+      service: new CategoryService(),
+      categories: [] as any,
+      category: new CategoryModel(),
+    };
+  },
+
+  methods: {
+    async addCategory() {
+      const response = await this.service.post(this.category);
+      const data = await this.service.get();
+      this.categories = data;
+      this.category.name = "";
+    },
+  },
+
+  async beforeMount() {
+    const data = await this.service.get();
+    this.categories = data;
+  },
 });
 </script>
 
 <style scoped>
-.dive{
+.dive {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
 </style>

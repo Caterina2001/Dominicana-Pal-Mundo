@@ -28,6 +28,7 @@
               >
                 <div class="form-row tm-search-form-row">
                   <div class="form-group tm-form-element tm-form-element-50">
+                    <label for="">Nombre</label>
                     <input
                       name="check-in"
                       type="text"
@@ -37,6 +38,7 @@
                     />
                   </div>
                   <div class="form-group tm-form-element tm-form-element-50">
+                    <label for="">Ubicación</label>
                     <input
                       name="check-out"
                       type="text"
@@ -46,6 +48,7 @@
                     />
                   </div>
                   <div class="form-group tm-form-element tm-form-element-50">
+                    <label for="">Habitaciones</label>
                     <input
                       name="check-out"
                       type="Number"
@@ -57,6 +60,7 @@
                 </div>
                 <div class="form-row tm-search-form-row">
                   <div class="form-group tm-form-element tm-form-element-50">
+                    <label for="">Precio por día</label>
                     <input
                       name="check-out"
                       type="Number"

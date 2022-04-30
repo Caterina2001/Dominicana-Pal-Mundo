@@ -171,8 +171,8 @@ export default Vue.extend({
           (this.user.model.role == "Admin" && this.secretCode == "TDS") ||
           this.user.model.role == "Registered"
         ) {
+          this.user.model.registrationDate = new Date()
           const response = await this.service.signUp(this.user.model);
-          console.log(response);
           if (localStorage.getItem("currentUser")) {
             localStorage.removeItem("currentUser");
           }

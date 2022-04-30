@@ -3,25 +3,41 @@
     <div class="hoc container clear">
       <div class="sectiontitle">
         <p class="heading underline font-x2">
-          Hoteles cercanos 
+          Hoteles en la República Dominicana
         </p>
-        <br>
-        <router-link to="/addhotel" class="tm-btn-white-bordered add-hotel"
+        <router-link
+          to="/addhotel"
+          class="tm-btn-white-bordered add-hotel"
+          v-if="user.role == 'Admin'"
           >Agregar hotel</router-link
         >
       </div>
       <ul class="nospace group team">
-        <li class="one_quarter first">
+        <li
+          class="one_quarter"
+          :class="{ first: index == 0 }"
+          v-for="(hotel, index) in hotels"
+          :key="index"
+        >
           <figure>
-            <a class="" href="#"
-              ><img src="assets/images/hotel1.jpg" alt=""
-            /></a>
+            <a class="" href="#"><img :src="images[index]" alt="" /></a>
             <figcaption>
-              <strong>Hotel View</strong> <em>A 5 Km de distancia</em>
+              <strong>{{ hotel.name }}</strong>
+              <em>{{ hotel.location }}</em>
+              <em>RD${{ hotel.pricePerDay }}P/D</em>
+              <em v-if="user.role == 'Admin'"
+                >{{ hotel.rooms }} Habitaciones</em
+              >
+              <em v-if="user.role == 'Admin'"
+                >{{ hotel.availableRooms }} Habitaciones Disponibles</em
+              >
+              <em v-if="user.role == 'Admin'"
+                >{{ hotel.occupiedRooms }} Habitaciones Ocupadas</em
+              >
             </figcaption>
           </figure>
         </li>
-        <li class="one_quarter">
+        <!-- <li class="one_quarter">
           <figure>
             <a class="" href="#"
               ><img src="assets/images/hotel2.jpg" alt=""
@@ -31,8 +47,8 @@
               <em>A 0 Km de distancia</em>
             </figcaption>
           </figure>
-        </li>
-        <li class="one_quarter">
+        </li> -->
+        <!-- <li class="one_quarter">
           <figure>
             <a class="" href="#"
               ><img src="assets/images/hotel3.jpg" alt=""
@@ -41,8 +57,8 @@
               <strong>Hotel Primavera</strong> <em>A 10 Km de distancia</em>
             </figcaption>
           </figure>
-        </li>
-        <li class="one_quarter">
+        </li> -->
+        <!-- <li class="one_quarter">
           <figure>
             <a class="" href="#"
               ><img src="assets/images/hotel4.jpg" alt=""
@@ -51,7 +67,7 @@
               <strong>Hotel El Libano</strong> <em>A 2 Km de distancia</em>
             </figcaption>
           </figure>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="tm-section-2">
@@ -73,6 +89,43 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import Vue from "vue";
+import HotelService from "../../core/services/hotel.service";
+import store from "@/store/index";
+
+export default Vue.extend({
+  data() {
+    return {
+      hotels: [] as any,
+      images: [
+        "http://localhost:8080/assets/images/hotel1.jpg",
+        "http://localhost:8080/assets/images/hotel2.jpg",
+        "http://localhost:8080/assets/images/hotel3.jpg",
+        "http://localhost:8080/assets/images/hotel4.jpg",
+        "http://localhost:8080/assets/images/hotel1.jpg",
+        "http://localhost:8080/assets/images/hotel2.jpg",
+        "http://localhost:8080/assets/images/hotel3.jpg",
+        "http://localhost:8080/assets/images/hotel4.jpg",
+      ],
+      service: new HotelService(),
+    };
+  },
+  computed: {
+    user: function () {
+      return store.state.user;
+    },
+  },
+
+  async beforeMount() {
+    this.hotels = await this.service.get();
+    this.hotels = this.hotels.sort(function (a: any, b: any) {
+      return a.name.localeCompare(b.name, "en", { numeric: true });
+    });
+    this.user = JSON.parse(localStorage.getItem("currentUser")!);
+  },
+});
+</script>
 <style>
 .heading {
   font-size: 32px;
@@ -85,5 +138,12 @@
 
 .add-hotel {
   color: #f48840;
+}
+
+.team figure em {
+  display: block;
+  font-style: normal;
+  font-size: 0.8rem;
+  line-height: 26px;
 }
 </style>

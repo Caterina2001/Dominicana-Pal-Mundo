@@ -65,11 +65,6 @@ const routes: Array<RouteConfig> = [
     name: 'reservations',
     component: () => import('../views/reservationsList/reservationList.vue')
   },
-  {
-    path: '/itineraries',
-    name: 'profile',
-    component: () => import('../views/user/Profile.vue')
-  },
 
   {
     path: '/addhotel',
@@ -82,6 +77,11 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/reservationsList/Itinerario.vue')
   },
   {
+    path: '/itineraries',
+    name: 'Itineraries',
+    component: () => import('../views/itinerario/itinerario.vue')
+  },
+ {
     path: '/formDestination',
     name: 'formDestination',
     component: () => import('../views/touristDestination/formDestination.vue')

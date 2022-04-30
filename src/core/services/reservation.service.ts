@@ -9,10 +9,11 @@ export default class ReservationService extends BaseService<ReservationModel>
         super("reservation")
     }
 
-    async get() {
-        const data = await axios.get("http://localhost:3000/api/reservation/", {
+    async get(user: string) {
+        const data = await axios.get("http://localhost:3000/api/reservation/" + user, {
             headers: {
                 "Content-Type": "application/json",
+                "x-access-token": store.state.token
             }
         })
         return data.data
