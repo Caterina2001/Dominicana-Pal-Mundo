@@ -22,7 +22,7 @@
                   </div>
                   <a href="post-details-hongo.html"><h4>Hongo Magico</h4></a>
                   <ul class="post-info">
-                    <li><router-link to="/hotel">Hoteles</router-link></li>
+                  <li><router-link to="/hotel">Hoteles</router-link></li>
                     <li><router-link to="/experience">Experiencias</router-link></li>
                     <li><router-link to="/restaurant">Restaurantes</router-link></li>
                   </ul>
@@ -38,9 +38,9 @@
                   </div>
                   <a href="post-details-fronton.html"><h4>Playa Frontón</h4></a>
                   <ul class="post-info">
-                    <li><a href="#">Hoteles</a></li>
-                    <li><a href="#">Experiencias</a></li>
-                    <li><a href="#">Restaurantes</a></li>
+                   <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
                   </ul>
                 </div>
               </div>
@@ -54,9 +54,9 @@
                   </div>
                   <a href="post-details-sanjuan.html"><h4>Cañón del rio blanco</h4></a>
                   <ul class="post-info">
-                    <li><a href="hotel-sanjuan.html">Hoteles</a></li>
-                    <li><a href="experiencia-sanjuan.html">Experiencias</a></li>
-                    <li><a href="restaurante-sanjuan.html">Restaurantes</a></li>
+                  <li><router-link to="/hotel">Hoteles</router-link></li>
+                    <li><router-link to="/experience">Experiencias</router-link></li>
+                    <li><router-link to="/restaurant">Restaurantes</router-link></li>
                   </ul>
                 </div>
               </div>
