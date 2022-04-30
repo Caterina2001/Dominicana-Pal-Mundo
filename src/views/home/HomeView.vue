@@ -359,21 +359,11 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
-
-
-
   </body>
-  
-  
 </template>
-
-
-
 
 <script lang="ts">
 

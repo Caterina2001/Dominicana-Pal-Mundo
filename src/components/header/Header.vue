@@ -41,7 +41,9 @@
                 >
               </li>
               <li class="nav-item">
-                <router-link to="/reservas" class="nav-link">Reservas</router-link>
+                <router-link to="/reservas" class="nav-link"
+                  >Reservas</router-link
+                >
               </li>
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link"
@@ -49,7 +51,7 @@
                 >
               </li>
               <div class="user-section">
-                <li class="nav-item login" v-if="!user">
+                <li class="nav-item login" v-if="user.name == ''">
                   <router-link to="/login" class="nav-link">Login</router-link>
                 </li>
                 <div class="navbar-menu" v-else>
@@ -61,45 +63,48 @@
                     >
                       <template #trigger>
                         <a class="navbar-item" role="button">
-                          <i class="fa fa-user-circle-o user-icon" aria-hidden="true"></i>
+                          <i
+                            class="fa fa-user-circle-o user-icon"
+                            aria-hidden="true"
+                          ></i>
                           <b-icon icon="menu-down"></b-icon>
                         </a>
                       </template>
 
-                     
                       <hr class="dropdown-divider" />
-                    
+
                       <b-dropdown-item value="home" aria-role="menuitem">
                         <b-icon icon="home"></b-icon>
                         <strong>
-                          {{user.name}}
-                          </strong>
+                          {{ user.name }}
+                        </strong>
                       </b-dropdown-item>
                       <b-dropdown-item value="products" aria-role="menuitem">
                         <router-link to="profile">
-                           <b-icon icon="cart"></b-icon>
-                        Ver mi perfil
-                    
+                          <b-icon icon="cart"></b-icon>
+                          Ver mi perfil
                         </router-link>
-                         </b-dropdown-item>
-                          <b-dropdown-item value="products" aria-role="menuitem">
+                      </b-dropdown-item>
+                      <b-dropdown-item value="products" aria-role="menuitem">
                         <router-link to="itineraries">
-                           <b-icon icon="cart"></b-icon>
-                        Mis itinerarios
-                    
+                          <b-icon icon="cart"></b-icon>
+                          Mis itinerarios
                         </router-link>
-                         </b-dropdown-item>
-                          <b-dropdown-item value="products" aria-role="menuitem">
+                      </b-dropdown-item>
+                      <b-dropdown-item value="products" aria-role="menuitem">
                         <router-link to="reservations">
-                           <b-icon icon="cart"></b-icon>
-                        Mis reservaciones
-                    
+                          <b-icon icon="cart"></b-icon>
+                          Mis reservaciones
                         </router-link>
-                         </b-dropdown-item>
-                
+                      </b-dropdown-item>
+
                       <hr class="dropdown-divider" aria-role="menuitem" />
-                      <b-dropdown-item value="logout" aria-role="menuitem" @click="logout()">
-                        <b-icon icon="logout" ></b-icon>
+                      <b-dropdown-item
+                        value="logout"
+                        aria-role="menuitem"
+                        @click="logout()"
+                      >
+                        <b-icon icon="logout"></b-icon>
                         Cerrar sesión
                       </b-dropdown-item>
                     </b-dropdown>
@@ -116,39 +121,46 @@
 
 <script lang="ts">
 import Vue from "vue";
-import store from '@/store/index'
+import store from "@/store/index";
+import { SignUpModel } from "../../core/models/user.model";
 
 export default Vue.extend({
-
-  methods:{
-    logout(){
-      localStorage.removeItem("currentUser")
-      store.state.user = null
-    }
-
+  methods: {
+    logout() {
+      this.user.name = ""
+      localStorage.removeItem("currentUser");
+      localStorage.setItem("currentUser", JSON.stringify(new SignUpModel()));
+      this.user = JSON.parse(localStorage.getItem("currentUser")!);
+      store.state.user = this.user;
+    },
   },
 
-  computed:{
-    user: function(){
-      return store.state.user
-    }
-  }
+  computed: {
+    user: {
+      get: function () {
+        return store.state.user;
+      },
+
+      set: function () {
+        return store.state.user;
+      },
+    },
+  },
 });
 </script>
 
 <style scoped>
-.container{
+.container {
   margin: 0 0 0 47px !important;
 }
 
 .user-section {
-    position: absolute;
-    right: -106px;
-    display: flex;
+  position: absolute;
+  right: -106px;
+  display: flex;
 }
 
-.user-icon{
-      font-size: 43px;
-   
+.user-icon {
+  font-size: 43px;
 }
 </style>

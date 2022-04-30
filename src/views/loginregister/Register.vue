@@ -172,7 +172,6 @@ export default Vue.extend({
           this.user.model.role == "Registered"
         ) {
           const response = await this.service.signUp(this.user.model);
-          console.log(response);
           if (localStorage.getItem("currentUser")) {
             localStorage.removeItem("currentUser");
           }
